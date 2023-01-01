@@ -30,38 +30,30 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-abs2
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-abs2 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var abs2 = require( 'path/to/vendor/umd/math-base-special-abs2/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.abs2;
-})();
-</script>
+var abs2 = require( '@stdlib/math-base-special-abs2' );
 ```
 
 #### abs2( x )
@@ -95,15 +87,10 @@ v = abs2( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var abs2 = require( '@stdlib/math-base-special-abs2' );
 
 var x;
 var i;
@@ -112,11 +99,6 @@ for ( i = 0; i < 100; i++ ) {
     x = round( randu() * 100.0 ) - 50.0;
     console.log( 'abs2(%d) = %d', x, abs2( x ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -125,7 +107,88 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/abs2.h"
+```
+
+#### stdlib_base_abs2( x )
+
+Computes the squared absolute value of a double-precision floating-point number.
+
+```c
+double y = stdlib_base_abs2( -5.0 );
+// returns 25.0
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` input value.
+
+```c
+double stdlib_base_abs2( const double x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/abs2.h"
+#include <stdio.h>
+
+int main() {
+    double x[] = { 3.14, -3.14, 0.0, 0.0/0.0 };
+
+    double y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_abs2( x[ i ] );
+        printf( "abs2(%lf) = %lf\n", x[ i ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -168,7 +231,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -215,9 +278,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/abs]: https://github.com/stdlib-js/math-base-special-abs/tree/umd
+[@stdlib/math/base/special/abs]: https://github.com/stdlib-js/math-base-special-abs
 
-[@stdlib/math/base/special/abs2f]: https://github.com/stdlib-js/math-base-special-abs2f/tree/umd
+[@stdlib/math/base/special/abs2f]: https://github.com/stdlib-js/math-base-special-abs2f
 
 <!-- </related-links> -->
 
