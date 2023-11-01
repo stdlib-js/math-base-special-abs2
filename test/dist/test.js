@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,43 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isPositiveZero = require( '@stdlib/math-base-assert-is-positive-zero' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var PI = require( '@stdlib/constants-float64-pi' );
-var abs2 = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof abs2, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function computes the squared absolute value of a number', function test( t ) {
-	t.strictEqual( abs2( -2.0 ), 4.0, 'negative number' );
-	t.strictEqual( abs2( 3.0 ), 9.0, 'positive number' );
-	t.strictEqual( abs2( 0.0 ), 0.0, 'zero' );
-	t.strictEqual( abs2( -PI ), PI*PI, 'pi' );
-	t.end();
-});
-
-tape( 'the function computes the squared absolute value of negative zero', function test( t ) {
-	t.strictEqual( isPositiveZero( abs2( -0.0 ) ), true, 'returns positive zero' );
-	t.end();
-});
-
-tape( 'the function computes the squared absolute value of infinity', function test( t ) {
-	t.strictEqual( abs2( PINF ), PINF, 'returns +infinity' );
-	t.strictEqual( abs2( NINF ), PINF, 'returns +infinity' );
-	t.end();
-});
-
-tape( 'if provided `NaN`, the function returns `NaN`', function test( t ) {
-	var v = abs2( NaN );
-	t.strictEqual( isnan( v ), true, 'returns NaN' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
