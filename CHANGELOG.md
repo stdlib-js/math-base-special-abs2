@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-17)
+## Unreleased (2025-03-17)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`77d3b84`](https://github.com/stdlib-js/stdlib/commit/77d3b84fcc127a32ccce5f9d9abccac7a41b52ea) - **chore:** rename variable for consistency [(#6113)](https://github.com/stdlib-js/stdlib/pull/6113) _(by Harsh)_
 -   [`b385506`](https://github.com/stdlib-js/stdlib/commit/b38550641ecefd82d2c9ad8fcc0dee10ac58e98b) - **bench:** refactor benchmarks and update test messages in `math/base/special/abs2` [(#4972)](https://github.com/stdlib-js/stdlib/pull/4972) _(by Karan Anand)_
 -   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
 -   [`2b6f932`](https://github.com/stdlib-js/stdlib/commit/2b6f932477bdbbfe755ee3ff9bd0a04020b049bd) - **build:** add WebAssembly configuration to `math/base/special/abs2` and `math/base/special/sqrt` [(#2989)](https://github.com/stdlib-js/stdlib/pull/2989) _(by Aman Bhansali, Athan Reines)_
@@ -27,10 +28,11 @@
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
+-   Harsh
 -   Karan Anand
 -   Philipp Burckhardt
 
