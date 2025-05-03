@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-28)
+## Unreleased (2025-05-03)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`23bf064`](https://github.com/stdlib-js/stdlib/commit/23bf064a542e8a3ba998ded0e94f24396a467d63) - **chore:** add structured package data for `math/base/special/abs2` [(#6903)](https://github.com/stdlib-js/stdlib/pull/6903) _(by Karan Anand)_
 -   [`850472b`](https://github.com/stdlib-js/stdlib/commit/850472b35f4cf47cab44047acd94a9120d6d5b77) - **docs:** replace manual `for` loop in examples [(#6182)](https://github.com/stdlib-js/stdlib/pull/6182) _(by Karan Anand)_
 -   [`77d3b84`](https://github.com/stdlib-js/stdlib/commit/77d3b84fcc127a32ccce5f9d9abccac7a41b52ea) - **chore:** rename variable for consistency [(#6113)](https://github.com/stdlib-js/stdlib/pull/6113) _(by Harsh)_
 -   [`b385506`](https://github.com/stdlib-js/stdlib/commit/b38550641ecefd82d2c9ad8fcc0dee10ac58e98b) - **bench:** refactor benchmarks and update test messages in `math/base/special/abs2` [(#4972)](https://github.com/stdlib-js/stdlib/pull/4972) _(by Karan Anand)_
