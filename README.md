@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@esm/index.mjs';
+import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@v0.2.3-esm/index.mjs';
 ```
 
 #### abs2( x )
@@ -90,7 +90,7 @@ v = abs2( NaN );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@esm/index.mjs';
+import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@v0.2.3-esm/index.mjs';
 
 var x = discreteUniform( 100, -50, 50, {
     'dtype': 'float64'
