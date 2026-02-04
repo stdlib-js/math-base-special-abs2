@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-abs2",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Compute the squared absolute value of a double-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -40,7 +40,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-napi-unary": "^0.2.5",
+    "@stdlib/math-base-napi-unary": "^0.2.6",
     "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
